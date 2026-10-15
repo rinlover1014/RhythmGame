@@ -6,7 +6,7 @@ from lane import lanes
 pygame.init()
 
 # 화면 설정
-WIDTH = 800
+WIDTH = 802
 HEIGHT = 600
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))

@@ -7,7 +7,7 @@ HEIGHT = 600
 
 # 레인 색상
 LANE_COLOR = (40, 40, 40)
-LINE_COLOR = (100, 100, 100)
+LINE_COLOR = (255, 255,255)
 JUDGEMENT_COLOR = (255, 255, 255)
 
 
@@ -39,6 +39,14 @@ class Lane:
             (self.x + self.width, self.height),
             2
         )
+        # 레인 왼쪽 경계선
+        pygame.draw.line(
+            screen,
+            LINE_COLOR,
+            (self.x, 0),
+            (self.x, self.height),
+            2
+        )
 
         # 판정선
         pygame.draw.line(
@@ -52,10 +60,9 @@ class Lane:
 
 # 4개의 레인
 lane_width = WIDTH // 4
-
 lanes = [
     Lane(0, lane_width, HEIGHT, "D"),
     Lane(lane_width, lane_width, HEIGHT, "F"),
     Lane(lane_width * 2, lane_width, HEIGHT, "J"),
     Lane(lane_width * 3, lane_width, HEIGHT, "K")
-]
+] 
