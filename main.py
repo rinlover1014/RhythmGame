@@ -32,8 +32,8 @@ font_small = pygame.font.SysFont(FONT_NAMES, 22)
 # ---------------------------------------------------------------
 # 곡 설정
 # ---------------------------------------------------------------
-SONG_TITLE = "Ending Means Starting Again"
-MUSIC_FILE = "music.mp3"     # 이 파일을 main.py와 같은 폴더에 넣어 주세요
+SONG_TITLE = "끝났다는 것은 다시 시작된다는 것을"
+MUSIC_FILE = "끝났다는 것은 다시 시작된다는 것을.mp3"  # 이 파일을 main.py와 같은 폴더에 넣어 주세요
 LEAD_IN = 3.0                # 시작 전 카운트다운 (초)
 LEVELS = ["EASY", "NORMAL", "HARD"]
  
